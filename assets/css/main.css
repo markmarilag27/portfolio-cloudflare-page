@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #FAFAFA;
+  --color-black: #333333;
+}
+
+html {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
