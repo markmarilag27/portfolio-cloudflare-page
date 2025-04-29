@@ -11,7 +11,7 @@ import { skills } from '~/utils'
       <h2 class="text-2xl font-bold mb-3 md:text-4xl">
         Expertise & Capabilities
       </h2>
-      <p class="text-xs tracking-wide md:text-base lg:text-lg">
+      <p class="text-xs tracking-wide md:text-base lg:text-lg mb-12">
         Below is an overview of the core skills I bring to every project,
         organized by category—from backend frameworks and frontend libraries to
         cloud platforms, DevOps tools, testing practices, and collaboration

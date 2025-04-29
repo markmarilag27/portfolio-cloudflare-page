@@ -11,7 +11,7 @@ import { works } from '~/utils'
       <h2 class="text-2xl font-bold mb-3 md:text-4xl">
         Professional Experience Highlights
       </h2>
-      <p class="text-xs tracking-wide md:text-base lg:text-lg">
+      <p class="text-xs tracking-wide md:text-base lg:text-lg mb-12">
         Over the past several years, I’ve driven impactful projects across
         Jellow, Performativ, Appetiser Apps and Metadata Computer Systems. From architecting secure
         freelancer marketplaces and streamlining WealthTech reporting to
