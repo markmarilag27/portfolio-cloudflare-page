@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import AboutSection from '~/components/AboutSection.vue'
+import SkillSection from '~/components/SkillSection.vue'
+import WorkSection from '~/components/WorkSection.vue'
+
 const url = useRequestURL()
 
 useHead({
@@ -12,17 +16,9 @@ useHead({
 </script>
 
 <template>
-  <main>
-    <div class="max-w-2xs mx-auto md:max-w-2xl lg:max-w-4xl">
-      <h1 class="text-3xl font-bold">
-        I’m Mark Marilag — Full Stack Developer in the Philippines
-      </h1>
-      <p>
-        I have seven years of experience building key platforms—from secure freelance-hiring and wealth-management
-        dashboards to high-volume HR and fundraising apps. I design scalable, user-centered solutions that help
-        companies grow and make complex processes simpler. Whether you need to update legacy systems or start a new
-        project, let’s work together to bring your next product to life.
-      </p>
-    </div>
+  <main class="mt-[72px]">
+    <AboutSection />
+    <SkillSection />
+    <WorkSection />
   </main>
 </template>

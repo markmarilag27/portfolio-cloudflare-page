@@ -9,4 +9,5 @@ html {
   color: var(--color-black);
   background-color: var(--color-white);
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
