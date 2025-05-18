@@ -3,6 +3,7 @@ import HeroSection from '~/components/HeroSection.vue'
 import AboutSection from '~/components/AboutSection.vue'
 import SkillSection from '~/components/SkillSection.vue'
 import WorkSection from '~/components/WorkSection.vue'
+import MyProcessSection from '~/components/MyProcessSection.vue'
 
 const url = useRequestURL()
 
@@ -22,5 +23,6 @@ useHead({
     <AboutSection />
     <SkillSection />
     <WorkSection />
+    <MyProcessSection />
   </main>
 </template>
