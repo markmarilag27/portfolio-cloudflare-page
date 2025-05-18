@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      title: `Mark Marilag | Full Stack Developer (Laravel & Vue.js)`,
+      title: `Freelance MVP Developer | Front-End & Back-End Web Expert for Startups`,
       meta: [
         {
           name: 'viewport',
@@ -19,7 +19,13 @@ export default defineNuxtConfig({
         },
         {
           name: 'description',
-          content: `Full Stack Developer in the Philippines with 7+ years in Laravel, Vue.js, Docker & AWS Lambda. I build modular, high-performance apps and mentor teams to deliver quality.`,
+          content: `I help startups and founders turn ideas into fast, scalable MVPs. Full-stack development with clean UI, solid backend, and modern tools like Laravel, React, and Tailwind.`,
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: `https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@600;700;800&display=swap`,
         },
       ],
     },
@@ -45,7 +51,6 @@ export default defineNuxtConfig({
   },
 
   eslint: {
-    checker: true,
     config: {
       stylistic: true,
     },

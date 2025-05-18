@@ -5,7 +5,7 @@ import { navigationLinks } from '~/utils'
 
 <template>
   <div>
-    <nav class="fixed top-0 right-0 left-0 z-50 bg-[#000000] py-3">
+    <nav class="sticky top-0 z-50 bg-[#000000] py-3">
       <div class="max-w-2xs mx-auto md:max-w-2xl lg:max-w-4xl flex justify-between">
         <NuxtLink to="/">
           <SvgLogo class="block relative max-w-12 max-h-12" />
@@ -24,9 +24,9 @@ import { navigationLinks } from '~/utils'
       </div>
     </nav>
     <NuxtPage />
-    <footer class="bg-white py-20 text-center">
+    <footer class="bg-white py-20 text-neutral text-center">
       <small>
-        &copy; 2025, all rights reserved
+        &copy; 2025 Mark Marilag, All Rights Reserved
       </small>
     </footer>
   </div>

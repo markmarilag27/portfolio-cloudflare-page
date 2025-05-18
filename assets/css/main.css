@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 @theme {
+  /* Fonts */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Colors */
+  --color-primary: #6366F1;   /* Indigo 500 */
+  --color-secondary: #06B6D4; /* Cyan 500 */
+  --color-neutral: #0A0A0A;   /* Gray 950 */
+  --color-accent: #FBBF24;    /* Amber 400 */
+
   --color-white: #FAFAFA;
   --color-black: #333333;
+
+  /* Optional spacing or radius */
+  --radius-base: 0.5rem;
+  --radius-lg: 1rem;
 }
 
 html {

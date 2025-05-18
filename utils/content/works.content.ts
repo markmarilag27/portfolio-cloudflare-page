@@ -1,81 +1,177 @@
-import JellowLogo from '~/assets/images/jellow.png'
-import PerformativLogo from '~/assets/images/performativ.png'
-import AppetiserAppsLogo from '~/assets/images/appetiser-apps.png'
-import MetadataComputerSystemsLogo from '~/assets/images/metadatauae.png'
+import LogoBlueshores from '~/assets/images/logo_blueshores.png'
+import LogoCell5 from '~/assets/images/logo_cell5.png'
+import LogoAppetiserApps from '~/assets/images/logo_appetiser_apps.png'
+import PlatformJellowImage from '~/assets/images/platform_jellow.png'
+import PlatformPerformativImage from '~/assets/images/platform_performativ.png'
+import PlatformTitaniumCaravansImage from '~/assets/images/platform_titanium_caravans.png'
+import PlatformAhfImage from '~/assets/images/platform_ahf.png'
+import PlatformOneraiseImage from '~/assets/images/platform_oneraise.png'
+import PlatformFarmMapImage from '~/assets/images/platform_farmmap.png'
+
+export type CompanyProject = {
+  imageUrl: string
+  name: string
+  url: string
+  description: string
+  role: string
+  technology_stack: string[]
+}
 
 type WorkItem = {
+  companyLogoUrl: string
   companyName: string
-  companyLogo: string
   companyUrl: string
-  companyOverview: string[]
-  keyContributions: string[]
+  companyOverview: string
+  projects: CompanyProject[]
 }
 
 export const works: WorkItem[] = [
   {
-    companyName: 'Jellow (Sept 2022 – May 2025)',
-    companyLogo: JellowLogo,
-    companyUrl: 'https://jellow.nl',
-    companyOverview: [
-      'Dutch platform for “safe & fast” freelancer hiring, covering Development, Marketing, IT, Finance, and more',
-      '100% DBA-proof contract management plus weekly “DBA Donderdag” webinars on freelance law',
-      'Over 67 083 registered freelancers and 6 024 clients as of April 2025',
-      'TrustScore of 4.8/5 from 238 independent reviews on Trustpilot',
-    ],
-    keyContributions: [
-      'Delivered stakeholder-requested features while continuously chipping away at technical debt ​',
-      'Kept Metabase and other services secure and up-to-date by applying patches and updates',
-      'Introduced automated PHP static analysis and code formatting to keep our codebase clean ',
-      'Stepped in for QA by reviewing pull requests and ensuring quality when the QA team was unavailable',
-      'Mapped out an AI adoption roadmap to enhance our platform with smart, data-driven features',
-    ],
-  },
-  {
-    companyName: 'Performativ (Nov 2021 – Aug 2022)',
-    companyLogo: PerformativLogo,
-    companyUrl: 'https://www.performativ.com',
-    companyOverview: [
-      'ISO 27001-certified wealth management platform consolidating bank accounts, private equity, and more into one UI',
-      'Features data aggregation, portfolio analytics, branded client portals, automated compliance checks, and open-API integrations',
-      'Serves wealth managers, asset managers, investment advisors, banks, and family offices across Europe',
-    ],
-    keyContributions: [
-      'Improved backend performance and rolled out new Laravel features to keep the app fast and reliable.',
-      'Profiled and debugged with Blackfire.io, then decoupled services and migrated them to AWS using a CDK (TypeScript) stack—while preserving all core Laravel functionality.',
-      'Boosted our developer workflow by replacing Laravel Sail with custom Docker containers, cutting setup times significantly.',
-      'Tackled front-end tasks using React.js, TanStack Query, and the Context API, working hand-in-hand with our senior front-end developer.',
+    companyLogoUrl: LogoBlueshores,
+    companyName: 'Blueshores',
+    companyUrl: 'https://blueshores.eu',
+    companyOverview: `European IT services company that connects businesses with skilled IT professionals from the Philippines. Their mission is to provide reliable, affordable, and talented IT experts to help grow your business.`,
+    projects: [
+      {
+        imageUrl: PlatformJellowImage,
+        name: 'Jellow',
+        url: 'https://jellow.nl',
+        role: 'Senior Full Stack Developer',
+        description: `Jellow is a user-friendly, on-demand freelance platform operating in the Netherlands, Belgium, and Ireland. It connects businesses directly with freelancers across various sectors, eliminating intermediaries and ensuring transparent, efficient hiring processes.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'MySQL',
+          'Vue.js 2/3',
+          'Typescript',
+          'LESS',
+          'RESTFul API',
+          'Element UI',
+          'DigitalOcean',
+          'Meilisearch',
+          'Redis',
+          'OpenAI',
+          'SaaS',
+        ],
+      },
     ],
   },
   {
-    companyName: 'Appetiser Apps (Mar 2020 – Oct 2021)',
-    companyLogo: AppetiserAppsLogo,
-    companyUrl: 'https://appetiser.com.au/',
-    companyOverview: [
-      'Award-winning Australian app studio (#4 globally for design) delivering iOS, Android, React Native, and web (Laravel/Vue.js) solutions',
-      'Rapid-agile “Appetiser Baseplate™” method launching apps in as little as three months, backed by proactive communication and global talent',
-      'Client successes include YouFoodz (4.8 ★ App Store rating; $125 M app value), MyDeal (890 K active users; Play Store top 5), and Vello (3.2 M social followers; $2.1 M funding)',
-    ],
-    keyContributions: [
-      'Firefly HR - Enhanced and maintained the OSHC recruitment platform, fixing Xero and Employment Hero integrations to streamline payroll and credential validation for educators and centres',
-      'AHF/OneRaise - Led full-stack delivery of the OneRaise fundraising web app, achieving nearly $1 million in transactions for the Australian Horizons Foundation within 24 hours of launch. Built in Laravel & Vue.js, the project went from greenfield to production in just three months',
-      'CardX - Developed a StockX-style card-trading marketplace featuring advanced ML-driven image classification and automated price recognition. Implemented a Node.js web scraper on AWS Lambda, integrated SageMaker for probability scoring, and crafted a modular Laravel/Vue.js frontend for seamless user experience',
+    companyLogoUrl: LogoCell5,
+    companyName: 'Cell 5',
+    companyUrl: 'https://www.cell5.co.uk',
+    companyOverview: `UK-based ultramodern tech agency specializing in end-to-end digital solutions for startups and SMEs. They focus on building and scaling SaaS products, offering services from initial concept to full-scale deployment.`,
+    projects: [
+      {
+        imageUrl: PlatformPerformativImage,
+        name: 'Performativ',
+        url: 'https://performativ.com',
+        role: 'Full Stack Developer',
+        description: `Performativ is a comprehensive, cloud-based wealth management platform designed for professionals such as wealth managers, asset managers, financial advisors, family offices, and banks. It consolidates clients' holdings—from bank accounts to private equity—into a single, intuitive interface.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'AWS Lambda',
+          'MySQL',
+          'React.js',
+          'React Query',
+          'Typescript',
+          'Ant design',
+          'RESTFul API',
+          'Laravel Serverless',
+          'AWS',
+        ],
+      },
     ],
   },
   {
-    companyName: 'Metadata Computer Systems (May 2018 – March 2020)',
-    companyLogo: MetadataComputerSystemsLogo,
-    companyUrl: 'https://www.metadatacs.ca/',
-    companyOverview: [
-      'Business consulting firm delivering strategic software & IT services',
-      'Specializes in custom web applications for diverse industries',
-      'Focuses on cost-effective, value-driven solutions that grow with clients',
-    ],
-    keyContributions: [
-      'Built custom Laravel applications to match each client’s requirements',
-      'Worked with project managers to plan sprints and break down tasks',
-      'Rolled out feature updates and bug fixes based on client feedback',
-      'Monitored and scaled servers to keep applications fast and reliable',
-      'Produced quick mock-ups to speed up design approvals',
+    companyLogoUrl: LogoAppetiserApps,
+    companyName: 'Appetiser Apps',
+    companyUrl: 'https://appetiser.com.au',
+    companyOverview: `Australian-based digital agency renowned for transforming innovative ideas into successful digital products. With a global presence, they have a track record of delivering high-impact web and mobile applications.`,
+    projects: [
+      {
+        imageUrl: PlatformTitaniumCaravansImage,
+        name: 'Titanium Caravans',
+        url: 'https://app.titaniumcaravans.com.au',
+        role: 'Full Stack Developer',
+        description: `The Titanium Caravans Customer Portal is an online platform designed to enhance the ownership experience for Titanium Caravans customers. It offers a range of features and resources to assist users in managing their caravans effectively.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'Filamentphp',
+          'MySQL',
+          'Redis',
+          'AWS',
+          'Vuetify.js',
+          'Nuxt.js 3',
+        ],
+      },
+      {
+        imageUrl: PlatformAhfImage,
+        name: 'Australian Horizons Foundation',
+        url: 'https://www.ahfraffles.org.au',
+        role: 'Full Stack Developer',
+        description: `The Australian Horizons Foundation Raffles is an initiative by the Australian Horizons Foundation, a registered nonprofit organization dedicated to revitalizing and supporting rural communities across Australia. Through engaging and high-value raffles, they raise funds to provide much-needed social and economic support to rural Australians.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'Laravel Vapor',
+          'MySQL',
+          'Redis',
+          'Scss',
+          'Bulma.io',
+          'Nuxt.js 2',
+          'Vue.js 2',
+          'Vuetify.js',
+          'DigitalOcean',
+          'Laravel Forge',
+          'Laravel Envoyer',
+          'Stripe',
+        ],
+      },
+      {
+        imageUrl: PlatformOneraiseImage,
+        name: 'OneRaise',
+        url: 'https://oneraise.com.au',
+        role: 'Full Stack Developer',
+        description: `OneRaise is an Australian-based online fundraising platform designed to empower nonprofits and charities to reach broader audiences and maximize their impact. The platform was conceptualized by philanthropist Matt Gollan, who sought to rapidly develop a web application capable of facilitating effective fundraising campaigns.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'Laravel Vapor',
+          'MySQL',
+          'Redis',
+          'Scss',
+          'Bulma.io',
+          'Nuxt.js 2',
+          'Vue.js 2',
+          'DigitalOcean',
+          'Laravel Forge',
+          'Laravel Envoyer',
+          'Stripe Connect',
+        ],
+      },
+      {
+        imageUrl: PlatformFarmMapImage,
+        name: 'FarmMap',
+        url: 'https://farmap.com.au',
+        role: 'Front End Developer',
+        description: `FARMap is an Australian-based farm management software designed to simplify livestock and pasture management for farmers. Launched in 2021 by former beef and sheep farmer Sam Baulch, FARMap offers a user-friendly platform tailored to the real-world needs of family-run farming operations.`,
+        technology_stack: [
+          'PHP',
+          'Laravel',
+          'MySQL',
+          'Redis',
+          'Scss',
+          'Bootstrap',
+          'Vue.js 2',
+          'DigitalOcean',
+          'Laravel Forge',
+          'Laravel Envoyer',
+          'Stripe Connect',
+        ],
+      },
     ],
   },
 ]

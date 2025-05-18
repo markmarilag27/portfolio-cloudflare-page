@@ -6,12 +6,8 @@ type NavigationItem = {
 
 export const navigationLinks: NavigationItem[] = [
   {
-    href: '#top',
+    href: '#about',
     name: 'About Me',
-  },
-  {
-    href: '#skills',
-    name: 'Skills',
   },
   {
     href: '#works',
