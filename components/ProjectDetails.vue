@@ -10,6 +10,7 @@ const props = defineProps<CompanyProject>()
       :src="props.imageUrl"
       :title="props.name"
       :alt="props.name"
+      loading="lazy"
       width="100%"
       height="auto"
       class="aspect-3/2 object-cover"
