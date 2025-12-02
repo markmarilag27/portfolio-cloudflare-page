@@ -93,7 +93,7 @@ export const works: WorkItem[] = [
       {
         imageUrl: PlatformTitaniumCaravansImage,
         name: 'Titanium Caravans',
-        url: 'https://app.titaniumcaravans.com.au',
+        url: 'https://titaniumcaravans.com.au',
         role: 'Full Stack Developer',
         description: `The Titanium Caravans Customer Portal is an online platform designed to enhance the ownership experience for Titanium Caravans customers. It offers a range of features and resources to assist users in managing their caravans effectively.`,
         technology_stack: [
